@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        } */
+
+        .bear {
+            width: 400px;
+            height: 400px;
+            border-radius: 600px;
+            background: #b7ba6b;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        /* 腮紅 */
+        .bear::before {
+            content: "";
+            width: 120px;
+            height: 120px;
+            border-radius: 120px;
+            background: #838D3B;
+            position: absolute;
+            top: 55%;
+            left: -5%;
+            transform: translateY(-50%);
+        }
+
+        .bear::after {
+            content: "";
+            width: 120px;
+            height: 120px;
+            border-radius: 120px;
+            background: #838D3B;
+            position: absolute;
+            top: 55%;
+            right: -5%;
+            transform: translateY(-50%);
+        }
+
+        .eye::before {
+            content: "";
+            width: 60px;
+            height: 60px;
+            border: 10px solid white;
+            border-radius: 100px;
+            position: absolute;
+            top: 23%;
+            left: 20%;
+            transform: translateX(-10%);
+        }
+
+        .eye::after {
+            content: "";
+            width: 60px;
+            height: 60px;
+            border: 10px solid white;
+            border-radius: 100px;
+            position: absolute;
+            top: 23%;
+            right: 10%;
+            transform: translateX(-45%);
+        }
+
+        .bearnose {
+            width: 180px;
+            height: 120px;
+            border-radius: 90px/60px;
+            background: white;
+            position: absolute;
+            top: 45%;
+            left: 50%;
+            transform: translate(-50%, -10%);
+        }
+
+        .bearnose::before {
+            content: "";
+            width: 40px;
+            height: 30px;
+            border-radius: 20px/15px;
+            background: #b7ba6b;
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .bearnose::after {
+            content: "";
+            width: 100px;
+            height: 50px;
+            border-radius: 50px/25px;
+            background: #b7ba6b;
+            position: absolute;
+            top: 45%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .earleft {
+            width: 90px;
+            height: 90px;
+            border-radius: 100px;
+            background: #b7ba6b;
+            position: absolute;
+            left: 5%;
+            top: -1%;
+        }
+
+        .earleft::before {
+            content: "";
+            width: 60px;
+            height: 60px;
+            border-radius: 100px;
+            background: rgb(255, 255, 255);
+            position: absolute;
+            left: 20%;
+            top: 20%;
+            transform: translate(-5%, -5%);
+        }
+
+        .earright {
+            width: 90px;
+            height: 90px;
+            border-radius: 100px;
+            background: #b7ba6b;
+            position: absolute;
+            right: 5%;
+            top: -1%;
+        }
+
+        .earright::before {
+            content: "";
+            width: 60px;
+            height: 60px;
+            border-radius: 100px;
+            background: rgb(255, 255, 255);
+            position: absolute;
+            left: 20%;
+            top: 20%;
+            transform: translate(-5%, -5%);
+        }
+
+        .v::before {
+            content: "";
+            width: 50px;
+            height: 60px;
+            background: white;
+            position: absolute;
+            bottom: 10%;
+            left: 38%;
+            transform: skewX(40deg);
+        }
+
+        .v::after {
+            content: "";
+            width: 50px;
+            height: 60px;
+            background: white;
+            position: absolute;
+            bottom: 10%;
+            right: 37%;
+            transform: skewX(-40deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bear">
+        <!-- bear b、a 腮紅 -->
+        <div class="eye"></div>
+        <!-- 眼睛 b、aboder  -->
+        <div class="bearnose"></div>
+        <!-- 白色圓圓的部分、nose、mouse -->
+        <div class="earleft"></div>
+        <!-- earleft b 白色區塊 -->
+        <div class="earright"></div>
+        <!-- earright b 白色區塊 -->
+        <div class="v"></div>
+        <!--  V領-->
+    </div>
+</body>
+
+</html>
